@@ -1,6 +1,9 @@
 BIN_DIR = ./bin
 
-all: wol
-
-wol:
+all:
 	go build -o $(BIN_DIR)/wol .
+
+clean:
+	rm $(BIN_DIR)/wol
+
+.PHONY: clean
